@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+ }
+ nav{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    color: rgba(230, 166, 84, 0.873);
+    margin-bottom: 30px;
+    padding-top: 15px;
+}
+nav h1{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 800;
+    position: relative;
+    font-size: 35px;
+}
+nav h1:hover{
+    color: rgb(244, 184, 7);
+    cursor: pointer;
+}
+ul a{
+   padding-right: 10px;
+   text-decoration: none;
+   color: rgba(230, 166, 84, 0.873);
+
+}
+ul a:hover{
+   color: rgb(244, 184, 7);
+   cursor: pointer;
+}
+ul{
+   display: flex;
+}
+a{
+   padding: 0px 15px ;
+   list-style: none;
+}
+nav .right{
+   padding-right:20px ;
+   position: relative;
+   left: 220px;
+}ul{
+   display: flex;
+   position: relative;
+   left: 40px;
+}
+a{
+   padding: 0px 15px ;
+   list-style: none;
+}
+nav .right{
+   padding-right:20px ;
+   position: relative;
+   left: 220px;
+}
+#searchbar{
+   position: relative;
+   right: 50px;
+   padding: 7px;
+   border-radius: 10px;
+   background-color:rgba(181, 195, 196, 0.917);
+}
+#searchbar:hover{
+   background-color: rgba(181, 195, 196, 0.653);
+}
+.searchbar{
+   display: flex;
+}
+.fa-search{
+   position: relative;
+   right: 74px;
+   top: 6px;
+}
+.icon{
+    position: relative;
+    left: 180px;
+}
+.main{
+    width: 60%;
+    margin-left: 200px;
+    padding-top:40px;
+    padding-bottom:90px ;
+    padding-left: 50px;
+    color: rgba(230, 167, 84, 0.843);
+    background-color: rgba(0, 0, 0, 0.41);
+    font-weight:bold ;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px black;
+    display: flex;
+    padding-right: 50px;
+    font-style:italic ;
+    font-size: 20px;
+    animation: home ease-in-out 1s ;
+}
+@keyframes home{
+    0%{
+        position: relative;
+        right: 200px;
+    
+    }
+    100%{
+        position: relative;
+        right: 0px;
+    
+    }
+}
+.number1{
+    position: relative;
+    top: 50px;
+    width: 260px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+.wtr{
+    font-size: 44px;
+    color: rgb(241, 166, 67);
+    position: relative;
+    left: 10px;
+}
+#btn{
+    padding: 15px;
+    background-color:  rgb(241, 166, 67);
+    width: 140px;
+    border-radius: 12px;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    left: 34%;
+    bottom: 80px;
+    border: 5px rgb(241, 166, 67);
+    animation: btn 1s ease-in-out ;
+} 
+@keyframes btn{
+    0%{
+        position: relative;
+        left: 250px;
+
+    }
+}
+#btn:hover{
+    background-color:  rgb(241, 192, 67);
+}
+.fa-address-card:hover{
+    color:  rgb(241, 192, 67);
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(241, 192, 67); 
+    margin: 0px 0px;
+    padding-top: 30px;
+}
+body{
+    margin: 0px 0px;
+}
+footer .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+   position: relative;
+   bottom: 10px;
+   left: 240px;
+}
+footer .left{
+    margin-left: 60px;
+    position: relative;
+    top: 10px;
+    height: 40px
+}
+.address{
+    display: flex;
+    align-items: center;
+
+}
+.address{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 30px;
+    font-size: large;
+    bottom: 10px;
+}
+.icon a{
+position: relative;
+right: 30px;
+}
+.enrollnow{
+    position: relative;
+    left: 160px;
+    bottom: 40px;
+}
+.fa-address-card{
+    position: relative;
+    left: 165px;
+}

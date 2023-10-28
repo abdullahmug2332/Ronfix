@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="favicon.ico.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Addmission form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <h1>RONFIX</h1>
+        </div>
+        <div class="right">
+            <ul>
+                <a href="home.html" class="li">HOME</a>
+                <a href="details.html" class="li">DETAILS</a>
+                <a href="courses.html" class="li">COURSES</a>
+                <a href="fee.html" class="li">FEE</a>
+            </ul>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search.." id="searchbar">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="icon">
+            <i class="fa fa-address-card" style="font-size:33px"></i>
+        </div>
+    </nav>
+    <form class="main" onsubmit="return validationForm()">
+        <h1>ADDMISSION FORM</h1>
+        <div class="name">
+            <p>Name:</p>
+            <input type="text" placeholder="Full Name" id="name" required>
+        </div>
+        <div>
+            <p id="errormsgname"></p>
+        </div>
+        <div class="phone">
+            <p>Phone Number:</p>
+            <input type="number" placeholder="eg. 03144644178" id="number" required>
+        </div>
+        <div>
+            <p id="errormsgnumber"></p>
+        </div>
+        <div class="email">
+            <p>Email:</p>
+            <input type="email" placeholder="xyz@gmail.com" id="email" required>
+        </div>
+        <div>
+            <p id="errormsgemail"></p>
+        </div>
+        <div class="dateofbirth">
+            <p>Date of Birth:</p>
+            <input type="date" class="birthdate " required>
+        </div>
+        <div>
+            <p id="errormsgbirthdate"></p>
+        </div>
+        <div class="gender">
+            <p>Gender:</p>
+            <input type="text" placeholder="Male/Female" id="gender" required>
+        </div>
+        <div>
+            <p id="errormsggender"></p>
+        </div>
+        <div class="address">
+            <p>Address:</p>
+            <textarea name="" id="address" cols="40" rows="10" placeholder="eg.steet,area,city" required></textarea>
+        </div>
+        <div>
+            <p id="errormsgaddress"></p>
+        </div>
+        <div class="course">
+            <p>Course:</p>
+            <input type="text" placeholder="Entre your course name" id="course" required>
+        </div>
+        <div>
+            <p id="errormsgcourse"></p>
+        </div>
+        <input id="submit" type="submit" value="Submit">
+
+    </form>
+    <script>
+        function validationForm() {
+
+            var name = document.getElementById('name');
+            var errormsgname = document.getElementById('errormsgname');
+
+            var number = document.getElementById('number').value;
+            var errormsgnumber = document.getElementById('errormsgnumber');
+
+            var email = document.getElementById('email');
+            var errormsgemail = document.getElementById('errormsgemail');
+
+            var birthdate = document.getElementsByClassName('birthdate');
+            var errormsgbirthdate = document.getElementById('errormsgbirthdate');
+
+            var gender = document.getElementById('gender');
+            var errormsggender = document.getElementById('errormsggender');
+
+            var address = document.getElementById('address');
+            var errormsgaddress = document.getElementById('errormsgaddress');
+
+            var course = document.getElementById('course');
+            var errormsgcourse = document.getElementById('errormsgcourse');
+
+            //Name error
+            if (name.value.length > 18) {
+                errormsgname.textContent = "Name cannot exceed 18 characters.";
+                return false;
+            } else {
+                errormsgname.textContent = "";
+
+            }
+
+            // Phonenumber error
+
+            if (parseInt(number.length) == 11) {
+                errormsgnumber.textContent = "";
+            } else {
+                errormsgnumber.textContent = "Please Enter a Valid Phone Number";
+                return false;
+            }
+
+            // Gender error
+            if (gender.value == "male" || gender.value == "female") {
+                errormsggender.textContent = "";
+            } else {
+                errormsggender.textContent = "Please Entre the Correct Gender";
+                return false;
+            }
+            // Address error
+
+            if (address.value.length > 40) {
+                errormsgaddress.textContent = "Address contains more than 40 characters.";
+                return false;
+            } else {
+                errormsgaddress.textContent = "";
+            }
+
+            // Course error
+            if (course.value == "web development" || course.value == "ai development" || course.value == "app development" || course.value == "amazon" || course.value == "shopify" || course.value == "english spoken") {
+                errormsgcourse.textContent = "";
+            } else {
+                errormsgcourse.textContent = "We dont have any course like this ";
+                return false;
+            }
+        }
+    </script>
+
+
+
+    </script>
+    <footer>
+        <div class="left">
+            &copy; Copyright-RONFIX-2023-All right reserved
+        </div>
+        <div class="right">
+            <i class="fa fa-phone" style="font-size:24px"></i>
+            <p>+923144647853</p>
+        </div>
+        <div class="address2">
+            <i class='fa fa-map-pin' style="font-size:24px"></i>
+            <p>Arfa karim tower,Lahore</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

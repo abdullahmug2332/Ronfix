@@ -1,0 +1,366 @@
+body{
+   margin: 0;
+   padding: 0;
+   margin-bottom: 80px;
+}
+nav{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    color: rgba(230, 166, 84, 0.873);
+    margin-bottom: 30px;
+    z-index: 2;
+}
+nav h1{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 800;
+    position: relative;
+    left: 40px;
+}
+nav h1:hover{
+    color: rgb(244, 184, 7);
+    cursor: pointer;
+}
+ul a{
+    text-decoration: none;
+    color: rgba(230, 166, 84, 0.873);
+
+}
+ul a:hover{
+    color: rgb(244, 184, 7);
+    cursor: pointer;
+}
+.main h1:hover{
+    color: rgb(244, 184, 7);
+    cursor: pointer;
+}
+ul{
+    display: flex;
+}
+a{
+    padding: 0px 15px ;
+    list-style: none;
+}
+nav .right{
+    padding-right:20px ;
+    position: relative;
+    left: 220px;
+}
+.name,.phone,.email,.address,.course,.accountnumber{
+    display: flex;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+body{
+    background-image: url(background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    width: 60%;
+    margin-left: 200px;
+    padding-top:40px;
+    padding-bottom:90px ;
+    padding-left: 90px;
+    color: rgba(230, 167, 84, 0.843);
+    background-color: rgba(0, 0, 0, 0.41);
+    font-weight:bold ;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px black;
+  
+}
+
+
+.main h1{
+    text-align: center;
+     text-shadow: 1px 1px 10px black;
+     position: relative;
+     right: 70px;
+}
+p{
+    font-size: 20px;
+}
+input{
+    font-size:18px ;
+    width: 60%;
+    border: 1px rgb(255, 255, 255);
+}
+#name{
+    position:relative;
+    width: 380px;
+    left: 72px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 30px;
+    background-color: rgba(181, 195, 196, 0.917);
+    
+}
+#name:hover,#email:hover,#number:hover,.birthdate:hover,#gender:hover,textarea:hover,#course:hover,select:hover,#accountnumber:hover{
+    background-color:rgba(181, 195, 196, 0.653); 
+}
+#email{
+    position:relative;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 72px;
+    padding-left: 30px;
+    width: 380px;
+    background-color: rgba(181, 195, 196, 0.917);
+    
+
+}
+.dateofbirth{
+    display: flex;
+    padding: 0px;
+    padding-left: 55px;
+}
+.birthdate{
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 4px;
+    padding-left: 30px;
+    width: 375px;
+    background-color: rgba(181, 195, 196, 0.917);
+   
+}
+.gender{
+    padding-top: 25px;
+    padding-left: 50px;
+    display: flex;
+}
+#gender{
+    position: relative;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 60px;
+    padding-left: 30px;
+    width: 380px;
+    background-color: rgba(181, 195, 196, 0.917);
+
+}
+.address{
+    padding-top: 25px;
+}
+textarea{
+    position: relative;
+    left: 55px;
+    font-size: 18px;
+    border-radius: 13px;
+    background-color: rgba(181, 195, 196, 0.917);
+    
+}
+.course{
+    padding-left: 45px;
+}
+#course{
+    position: relative;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 70px; 
+    padding-left: 30px;
+    width: 380px;
+    background-color: rgba(181, 195, 196, 0.917);
+   
+}
+.card{
+    display: flex;
+    padding-left: 40px;
+}
+select{
+    position: relative;
+    left: 15px;
+    width: 60%;
+    font-size:22px ;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 417px;
+    background-color: rgba(181, 195, 196, 0.917);
+ 
+
+}
+.accountnumber p {
+    position:relative;
+    right: 22px;
+}
+#accountnumber{
+    position:relative;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    right: 18px;
+    padding-left: 30px;
+    width: 380px;
+    background-color: rgba(181, 195, 196, 0.917);
+   
+}
+.accountnumber{
+    padding-top: 20px;
+}
+
+button:hover{
+    background-color:rgb(230, 163, 30);
+}
+.phone p {
+    position: relative;
+    right: 15px;
+}
+#number{
+    position: relative;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    right: 9px;
+    padding-left: 30px;
+    width: 380px;
+    background-color: rgba(181, 195, 196, 0.917);
+
+}
+h1{
+    font-size: 35px;
+}
+.name p{
+    position: relative;
+    left: 10px;
+}
+.dateofbirth p{
+    position: relative;
+    right: 20px;
+}
+.course p{
+    position: relative;
+    left: 15px;
+}
+option{
+    background-color: rgba(0, 0, 0, 0.059);
+}
+.fa-address-card:hover{
+    color:rgb(230, 163, 30); 
+    font-size: 27px;
+}
+#searchbar{
+    position: relative;
+    left: 190px;
+    padding: 5px;
+    width:200px ;
+    border-radius: 10px;
+    background-color:rgba(181, 195, 196, 0.917);
+}
+#searchbar:hover{
+    background-color: rgba(181, 195, 196, 0.653);
+}
+.searchbar{
+    display: flex;
+}
+.fa-search{
+    position: relative;
+    left: 160px;
+    top: 6px;
+}
+.fa-address-card{
+    position: relative;
+    right: 250px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(241, 192, 67); 
+    margin: 0px 0px;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+footer .left{
+    margin-left: 60px;
+    position: relative;
+    top: 10px;
+    height: 40px
+}
+footer .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+   position: relative;
+   bottom: 10px;
+   left: 240px;
+}
+.address2{
+    display: flex;
+    align-items: center;
+
+}
+body{
+    height: 900px;
+}
+.address2{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 30px;
+    font-size: large;
+    bottom: 10px;
+}
+#submit{
+    font-size: 20px;
+    padding: 15px 45px;
+    position: relative;
+    top: 59px;
+    left: 36%;
+    width: 200px;
+    background-color: #edb4189c;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    border-radius: 8px;
+}
+#submit:hover{
+    background-color:#edb418ea ;
+    cursor: pointer;
+}
+#errormsgname,#errormsgnumber{
+    position: relative;
+    left: 196px;
+    bottom: 12px;
+    color: rgba(255, 0, 0, 0.811);
+    margin-top: 3px;
+    font-size: 18px;
+}
+#errormsggender,#errormsgaddress {
+    position: relative;
+    left: 196px;
+    bottom: -12px;
+    color: rgba(255, 0, 0, 0.811);
+    margin-top: 3px;
+    font-size: 18px;
+}
+#errormsgcourse {
+    position: relative;
+    left: 196px;
+    bottom: 8px;
+    color: rgba(255, 0, 0, 0.811);
+    margin-top: 3px;
+    font-size: 18px;
+}
+form{
+    animation: form 1s ease-in-out;
+    
+}
+@keyframes form {
+    0%{
+        position: relative;
+      right: 200px;
+    
+    }
+    100%{
+        position: relative;
+      right: 0px;
+    
+    }
+}

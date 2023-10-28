@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    color: rgba(230, 166, 84, 0.873);
+    margin-bottom: 30px;
+    padding-top: 15px;
+}
+
+nav h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 800;
+    position: relative;
+    font-size: 35px;
+}
+
+nav h1:hover {
+    color: rgb(244, 184, 7);
+    cursor: pointer;
+}
+
+ul a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: rgba(230, 166, 84, 0.873);
+
+}
+
+ul a:hover {
+    color: rgb(244, 184, 7);
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+
+}
+
+a {
+    padding: 0px 15px;
+    list-style: none;
+}
+
+nav .right {
+    padding-right: 20px;
+    position: relative;
+    left: 220px;
+}
+
+ul {
+    display: flex;
+    position: relative;
+    left: 40px;
+}
+
+a {
+    padding: 0px 15px;
+    list-style: none;
+}
+
+nav .right {
+    padding-right: 20px;
+    position: relative;
+    left: 220px;
+}
+
+#searchbar {
+    position: relative;
+    left: 150px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgba(181, 195, 196, 0.917);
+}
+
+#searchbar:hover {
+    background-color: rgba(181, 195, 196, 0.653);
+}
+
+.searchbar {
+    display: flex;
+}
+
+.fa-search {
+    position: relative;
+    left: 125px;
+    top: 6px;
+}
+
+.main {
+    width: 70%;
+    margin-left: 150px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    padding-left: 50px;
+    color: rgba(230, 167, 84, 0.843);
+    background-color: rgba(0, 0, 0, 0.41);
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px black;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    font-style: italic;
+    font-size: 20px;
+    flex-direction: column;
+    text-align: center;
+    animation: fee 1s ease-in-out;
+}
+@keyframes fee {
+    0%{
+        position: relative;
+        right: 200px;
+        opacity: 70%;
+    }
+    100%{
+        position: relative;
+        right: 0px;
+        opacity: 100%;
+    }
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(241, 192, 67);
+    margin: 0px 0px;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+footer .left {
+    margin-left: 60px;
+    position: relative;
+    top: 10px;
+    height: 40px
+}
+
+footer .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+    position: relative;
+    bottom: 10px;
+    left: 240px;
+}
+
+.address2 {
+    display: flex;
+    align-items: center;
+
+}
+
+body {
+    height: 500px;
+}
+
+.address2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 30px;
+    font-size: large;
+    bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    /* This ensures that table borders collapse into a single border where cells meet */
+    width: 100%;
+    /* Set the table width if needed */
+}
+
+th,
+td {
+    border: 3px solid rgba(230, 167, 84, 0.843);
+    ;
+    /* Set the border style, width, and color */
+    padding: 10px;
+    /* Add padding to cells for spacing */
+    text-align: center;
+    /* Adjust cell text alignment if needed */
+}
+
+.fa-address-card:hover {
+    color: rgb(244, 184, 7);
+}
